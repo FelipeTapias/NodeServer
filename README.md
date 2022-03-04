@@ -2,7 +2,8 @@
 
 ### **Why do I doing it?**
 ```
-In this way I can consolidate knowledge and learn more about NodeJS and Mongo. Another thing very important, I have a lot of fun learning.
+In this way I can consolidate knowledge and learn more about NodeJS and Mongo. 
+Another thing very important, I have a lot of fun learning.
 ```
 
 ### **Tutorial Link:**
