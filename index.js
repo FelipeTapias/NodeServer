@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // initialize routes
-app.use('/api',require('./routes/api'));
+app.use('/api', require('./routes/api'));
 
 // error handling middleware
 app.use((err,req,res,next) => { 
@@ -21,6 +21,6 @@ app.use((err,req,res,next) => {
 });
 
 // listen for requests
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Now listening for request. PORT ${process.env.PORT}`);
 });
