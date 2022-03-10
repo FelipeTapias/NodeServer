@@ -10,7 +10,7 @@ router.get('/users', (req,res, next) => {
 
 router.post('/users', (req, res, next) => {
     User.create(req.body).then((user) => {
-        res.send(user);
+        res.send('User created successfull!');
     }).catch(next);
 });
 
