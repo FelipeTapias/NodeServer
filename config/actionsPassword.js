@@ -4,16 +4,13 @@ const bcrypt = require("bcryptjs");
 const rondasDeSal = 10;
 
 function hashingPassword(password) {
-
-    bcrypt.hash(password, rondasDeSal, (err, palabraSecretaEncriptada) => {
-        if (err) {
-            console.log("Error hasheando:", err);
-            return err;
-        } else {
-            console.log("Password encriptada: " + palabraSecretaEncriptada);
-            return  palabraSecretaEncriptada;
-        }
+    return  new Promise((resolve, reject) => {
+        bcrypt.hash(password, rondasDeSal, async(err, palabraSecretaEncriptada) => {
+            err ? reject(err) : resolve(palabraSecretaEncriptada);
+        });
     });
 }
 
-module.exports = hashingPassword;
+module.exports = {
+    hashingPassword: hashingPassword
+};
