@@ -11,7 +11,7 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    idPerson: {
+    idDocument: {
         type: Number,
         required: true
     },
@@ -31,10 +31,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    // birthDayDate: {
-    //     type: Date,
-    //     required: true
-    // },
+    birthDayDate: {
+        type: Date,
+        required: true
+    },
     dateCreate: {
         type: Date,
         default: Date.now()
